@@ -12,7 +12,7 @@ router.use(function(req,res,next) {
 });
 
 // API Routes
-router.use("/api", apiRoutes);
+router.use("/api/", apiRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {
