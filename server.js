@@ -16,13 +16,16 @@ app.use(routes);
 
 // Connect to the Mongo DB
 // Connect to the Mongo DB
-mongoose.connect(
-  "mongodb://skiel:abc123abc@ds253537.mlab.com:53537/heroku_dkjqnstq",
-  {
-    // useCreateIndex: true,
-    useNewUrlParser: true
-  }
-);
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
+
+// mongoose.connect(
+//   "mongodb://skiel:abc123abc@ds253537.mlab.com:53537/heroku_dkjqnstq",
+//   {
+//     // useCreateIndex: true,
+//     useNewUrlParser: true
+//   }
+// );
 
 // mongoose.connect(
 //   process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
