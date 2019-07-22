@@ -2,7 +2,7 @@ const router = require("express").Router();
 const booksController = require("../../controllers/booksController");
 
 router.use(function(req,res,next) {
-  console.log('%s %s', req.method, req.url);
+  console.log('%s: %s %s', "api-books.js", req.method, req.url);
   next();
 });
 
