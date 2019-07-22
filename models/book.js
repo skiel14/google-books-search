@@ -6,8 +6,7 @@ const bookSchema = new Schema({
   authors: [{ type: String, required: true }],
   description: String,
   image: { type: String, trim: true },
-  link: { type: String, trim: true },
-  date: { type: Date, default: Date.now }
+  link: { type: String, trim: true }
 });
 
 const Book = mongoose.model("Book", bookSchema);
