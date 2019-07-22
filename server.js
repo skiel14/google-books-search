@@ -17,7 +17,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  "mongodb://skiel:abc123abc@ds351107.mlab.com:51107/heroku_dkjqnstq",
+  "mongodb://skiel:abc123abc@ds351107.mlab.com:53537/heroku_dkjqnstq",
   { useNewUrlParser: true }
 );
 
