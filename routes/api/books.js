@@ -1,6 +1,11 @@
 const router = require("express").Router();
 const booksController = require("../../controllers/booksController");
 
+router.use(function(req,res,next) {
+  console.log('%s %s', req.method, req.url);
+  next();
+});
+
 // Matches with "/api/books"
 router.route("/")
   .get(booksController.findAll)
