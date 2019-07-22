@@ -2,6 +2,10 @@ const path = require("path");
 const router = require("express").Router();
 const apiRoutes = require("./api");
 
+router.use(function(req, res) {
+  res.status(403).send("403 forbidden?");
+});
+
 router.use(function(req,res,next) {
   console.log('%s: %s %s', "index.js", req.method, req.url);
   next();
