@@ -3,7 +3,7 @@ const router = require("express").Router();
 const apiRoutes = require("./api");
 
 router.use(function(req, res) {
-  res.status(403).send("403 forbidden?");
+  res.status(418).send("418 I'm a teapot");
 });
 
 router.use(function(req,res,next) {
