@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiKey = "AIzaSyDxDWPGOD4cItpSNn0AI04a5rgJeLVszmk";
+const apiKey = "AIzaSyBbQagiDTkD8IJvVCyjYZy0JXNphEztxqc";
 
 export default {
   getGoogleSearchBooks: function(term) {
